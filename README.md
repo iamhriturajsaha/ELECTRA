@@ -2,6 +2,23 @@
 
 ELECTRA is a futuristic, immersive democracy interface designed to empower voters, enhance civic education and streamline the electoral process across India. Built with cutting-edge technologies, it bridges the gap between advanced AI capabilities and grassroots democratic participation.
 
+📄 Google Cloud Run Link - https://electra-service-805504669798.us-central1.run.app
+
+## 🌌 Quick Glance
+<p align="center">
+  <img src="Images/1.png" alt="1" width="1000"/><br>
+  <img src="Images/2.png" alt="2" width="1000"/><br>
+  <img src="Images/3.png" alt="3" width="1000"/><br>
+  <img src="Images/4.png" alt="4" width="1000"/><br>
+  <img src="Images/5.png" alt="5" width="1000"/><br>
+  <img src="Images/6.png" alt="6" width="1000"/><br>
+  <img src="Images/7.png" alt="7" width="1000"/><br>
+  <img src="Images/8.png" alt="8" width="1000"/><br>
+  <img src="Images/9.png" alt="9" width="1000"/><br>
+  <img src="Images/10.png" alt="10" width="1000"/><br>
+  <img src="Images/11.png" alt="11" width="1000"/><br>
+</p>
+
 ## 🚀 Core Features
 - **🔮 Neural Core (AI Assistant)** - High-speed AI integration using the Gemini API for instant procedural audits, legal guidance and election FAQs.
 - **📊 Network Stats & Sentiment Matrix** - Real-time visualization of national democratic sentiment and voter readiness trends.
