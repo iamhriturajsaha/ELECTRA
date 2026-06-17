@@ -36,9 +36,4 @@ Thumbs.db
 
 # Misc
 README.md
-*.md
-.eslintrc*
-eslint.config.mjs
-vitest.config.ts
-postcss.config.mjs
-tsconfig.json
+Images/
