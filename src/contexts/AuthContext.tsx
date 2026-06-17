@@ -105,11 +105,10 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       }
 
       if (isNewUser && allowRegistration) {
-        // Registration via Google — create profile then sign out so they must log in explicitly
+        // Registration via Google — create profile and keep them logged in
         await upsertUserProfile(result.user);
-        await signOut(auth);
         trackEvent("auth", "google_register", result.user.email ?? undefined);
-        return; // Caller will show success message
+        return; // Caller handles navigation
       }
 
       // Existing user — normal sign in
@@ -135,8 +134,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const registerWithEmail = async (e: string, p: string) => {
     try {
       await createUserWithEmailAndPassword(auth, e, p);
-      // Sign out immediately — user must log in explicitly after registration
-      await signOut(auth);
+      // Automatically log them in (default Firebase behavior)
     } catch (error: unknown) {
       const errorMessage = error instanceof Error ? error.message : String(error);
       throw new Error(errorMessage);

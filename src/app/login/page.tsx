@@ -34,7 +34,6 @@ export default function LoginPage() {
     try {
       if (isLogin) {
         await loginWithEmail(email, password);
-        router.push("/");
       } else {
         // --- Registration validations ---
         if (password.length < 6) {
@@ -49,15 +48,6 @@ export default function LoginPage() {
         }
 
         await registerWithEmail(email, password);
-        // Don't auto-navigate — show success and switch to login
-        setSuccess("IDENTITY CREATED. You may now authenticate.");
-        setPassword("");
-        setConfirmPassword("");
-        // Auto-switch to login tab after a short delay
-        setTimeout(() => {
-          setIsLogin(true);
-          setSuccess(null);
-        }, 2500);
       }
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : "Authentication failed";
@@ -79,17 +69,6 @@ export default function LoginPage() {
     setLoading(true);
     try {
       await signInWithGoogle(!isLogin);
-      if (!isLogin) {
-        // Google registration — user was signed out, show success
-        setSuccess("IDENTITY CREATED via Google. You may now authenticate.");
-        setTimeout(() => {
-          setIsLogin(true);
-          setSuccess(null);
-        }, 2500);
-      } else {
-        // Existing user login — navigate to dashboard
-        router.push("/");
-      }
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       if (msg.includes("auth/popup-closed-by-user")) {
