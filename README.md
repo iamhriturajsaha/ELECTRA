@@ -2,7 +2,7 @@
 
 ELECTRA is a futuristic, immersive democracy interface designed to empower voters, enhance civic education and streamline the electoral process across India. Built with cutting-edge technologies, it bridges the gap between advanced AI capabilities and grassroots democratic participation.
 
-📄 Google Cloud Run Link - https://electra-service-805504669798.us-central1.run.app
+### Google Cloud Run Link - https://electra-359184835274.asia-south1.run.app
 
 ## 🌌 Quick Glance
 <p align="center">
