@@ -68,7 +68,7 @@ export default function LoginPage() {
     setSuccess(null);
     setLoading(true);
     try {
-      await signInWithGoogle(!isLogin);
+      await signInWithGoogle(true);
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       if (msg.includes("auth/popup-closed-by-user")) {
