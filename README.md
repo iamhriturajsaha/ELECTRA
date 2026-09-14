@@ -2,7 +2,7 @@
 
 ELECTRA is a futuristic, immersive democracy interface designed to empower voters, enhance civic education and streamline the electoral process across India. Built with cutting-edge technologies, it bridges the gap between advanced AI capabilities and grassroots democratic participation.
 
-🌐 **Live Demo** → https://electra-xtqb.onrender.com
+🌐 **Live Demo** → https://electra-ashen-one.vercel.app/
 
 ## 🌌 Quick Glance
 <p align="center">
@@ -20,7 +20,7 @@ ELECTRA is a futuristic, immersive democracy interface designed to empower voter
 </p>
 
 ## 🚀 Core Features
-- **🔮 Neural Core (AI Assistant)** - High-speed AI integration using the Gemini API for instant procedural audits, legal guidance and election FAQs.
+- **🔮 Neural Core (AI Assistant)** - High-speed AI integration using the OpenAI API for instant procedural audits, legal guidance and election FAQs.
 - **📊 Network Stats & Sentiment Matrix** - Real-time visualization of national democratic sentiment and voter readiness trends.
 - **🕹️ EVM Simulator** - A safe, interactive environment to understand how Electronic Voting Machines operate.
 - **🪪 E-Identity Simulator** - Generate a secure, digital Voter ID card preview.
@@ -31,7 +31,7 @@ ELECTRA is a futuristic, immersive democracy interface designed to empower voter
 ## 🛠️ Technology Stack
 - **Frontend** - Next.js 16 (React 19)
 - **Styling** - Tailwind CSS, Framer Motion (for futuristic micro-animations)
-- **AI Integration** - Google Gemini AI
+- **AI Integration** - OpenAI
 - **Database & Auth** - Firebase
 - **Mapping** - Google Maps JavaScript API
 - **Utilities** - html2canvas, jsPDF, QRCode.react
@@ -62,7 +62,9 @@ NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
 NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
 NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
-GEMINI_API_KEY=your_gemini_api_key
+OPENAI_API_KEY=your_openai_api_key
+NEXT_PUBLIC_GA_ID=your_google_analytics_id
+NEXT_PUBLIC_RECAPTCHA_SITE_KEY=your_recaptcha_site_key
 ```
 
 ### 5. Run the Development Server
