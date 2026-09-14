@@ -2,7 +2,7 @@
 
 ELECTRA is a futuristic, immersive democracy interface designed to empower voters, enhance civic education and streamline the electoral process across India. Built with cutting-edge technologies, it bridges the gap between advanced AI capabilities and grassroots democratic participation.
 
-🌐 **Live Demo** → https://electra-ashen-one.vercel.app
+🌐 **Live Demo** → https://electra-coral.vercel.app/
 
 ## 🌌 Quick Glance
 <p align="center">
